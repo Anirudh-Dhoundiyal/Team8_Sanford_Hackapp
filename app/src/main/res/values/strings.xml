@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">hackapp1</string>
+    <string name="app_heading">Hackthon App</string>
+    <string name="Sign_in">Sign In</string>
+    <string name="Enter_Pass">Enter Password</string>
+    <string name="Enter_No">Phone Number</string>
+    <string name="No_acc_prmt">New User?</string>
+    <string name="Frgt_pass_prmt">Forgot Password?</string>
+    <string name="Reg">Register</string>
+    <string name="enter_access_code">Enter Access Code</string>
+    <string name="register_new_user">Register New User</string>
+    <string name="next">Next</string>
+    <string name="don_t_have_a_access_code">Dont have a access Code?</string>
+    <string name="call_us">Call Us</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="i_accept_the_service_agreement">I accept the Service Agreement</string>
+    <string name="finish">Finish</string>
+    <string name="login">Login</string>
+    <string name="already_registered">Already registered?</string>
+    <string name="my_health_board">My Health Board</string>
+    <string name="schedule">Schedule</string>
+    <string name="scheduling_btn">Scheduling btn</string>
+    <string name="reports">Reports</string>
+    <string name="achievements">Achievements</string>
+    <string name="medication">Medication</string>
+
+
+</resources>
