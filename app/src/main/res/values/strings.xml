@@ -32,6 +32,9 @@
     <string name="close">Close</string>
     <string name="upcoming_appointments">Upcoming Appointments</string>
     <string name="schedule_appointment">Schedule Appointment</string>
+    <string name="monday">Monday (Nov 2nd)</string>
+    <string name="tuesday_nov_3rd">Tuesday (Nov 3rd)</string>
+    <string name="friday_nov_4th">Friday (Nov 6th)</string>
 
 
 </resources>
