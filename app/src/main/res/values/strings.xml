@@ -24,6 +24,12 @@
     <string name="reports">Reports</string>
     <string name="achievements">Achievements</string>
     <string name="medication">Medication</string>
+    <string name="user_picture">User Picture</string>
+    <string name="user_profile">User Profile</string>
+    <string name="profile">Profile</string>
+    <string name="username">Username</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 
 
 </resources>

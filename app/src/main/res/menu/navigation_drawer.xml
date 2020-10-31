@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/nav_schedule_btn"
+            android:icon="@drawable/calendar_today_24px"
+            android:title="@string/schedule" />
+
+        <item
+            android:id="@+id/nav_report_btn"
+            android:icon="@drawable/event_note_24px"
+            android:title="@string/reports" />
+
+        <item
+            android:id="@+id/nav_medication_btn"
+            android:icon="@drawable/medical_services_24px"
+            android:title="@string/medication" />
+
+        <item
+            android:id="@+id/nav_achievements_btn"
+            android:icon="@drawable/emoji_events_24px"
+            android:title="@string/achievements" />
+        <item
+            android:id="@+id/nav_profile_btn"
+            android:icon="@drawable/account_circle_24px"
+            android:title="@string/profile" />
+
+    <item android:title="Call Us">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_call"
+                android:icon="@drawable/call_icon"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_callback"
+                android:icon="@drawable/call_back_icon"
+                android:title="Share" />
+
+        </menu>
+    </item>
+</menu>

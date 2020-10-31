@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:padding="20dp"
+    android:background="@drawable/nav_background"
+
+    >
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/account_circle_24px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:textSize="24sp"/>
+</LinearLayout>

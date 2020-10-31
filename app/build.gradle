@@ -45,6 +45,9 @@ dependencies {
     //CardView Library
 
     implementation "androidx.cardview:cardview:1.0.0"
-    implementation 'com.android.support:gridlayout-v7:26.1.0'
+    // Grid layout Library
+    implementation "androidx.gridlayout:gridlayout:1.0.0"
+     // DrawerLayout Library
+    implementation "androidx.drawerlayout:drawerlayout:1.1.1"
 
 }
