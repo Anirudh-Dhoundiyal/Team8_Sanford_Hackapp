@@ -1,6 +1,7 @@
 package com.example.hackapp1
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
@@ -78,6 +79,13 @@ class Main_DashBoard : AppCompatActivity(), NavigationView.OnNavigationItemSelec
             R.id.nav_profile_btn -> {
                 this.startActivity(Intent(this, scheduling_main::class.java))
             }
+            R.id.nav_call -> {
+                val intent = Intent(Intent.ACTION_DIAL)
+                intent.data = Uri.parse("tel:6056666666")
+                startActivity(intent)
+
+            }
+
 
         }
         drawerLayout.closeDrawer(GravityCompat.START)

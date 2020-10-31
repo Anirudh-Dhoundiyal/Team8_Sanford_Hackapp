@@ -2,10 +2,12 @@ package com.example.hackapp1
 
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_register_activity.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -29,6 +31,12 @@ class MainActivity : AppCompatActivity() {
         Register.setOnClickListener {
             intent = Intent(this,Register_activity::class.java);
         startActivity(intent)
+        }
+
+        FrgtPass.setOnClickListener {
+            val intent = Intent(Intent.ACTION_DIAL)
+            intent.data = Uri.parse("tel:6056666666")
+            startActivity(intent)
         }
 
     }

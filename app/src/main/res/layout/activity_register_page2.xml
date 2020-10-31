@@ -43,7 +43,7 @@
         android:text="@string/i_accept_the_service_agreement" />
 
     <Button
-        android:id="@+id/etregister_next"
+        android:id="@+id/etregister_finish"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:background="#fff"
