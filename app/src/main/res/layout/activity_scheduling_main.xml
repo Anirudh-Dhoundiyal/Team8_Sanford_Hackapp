@@ -33,7 +33,7 @@
                 android:rowCount="2">
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/schedule_card"
+                    android:id="@+id/upschedule_card"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_rowWeight="1"
@@ -42,6 +42,12 @@
                     app:cardBackgroundColor="#ffff"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#fff">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -60,16 +66,34 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="12dp"
-                            android:text="@string/schedule"
+                            android:text="@string/upcoming_appointments"
                             android:textColor="#000"
                             android:textSize="20sp" />
 
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:id="@+id/expandableLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="You have no upcoming appointments"
+                        android:textSize="22sp"
+                        android:textColor="#000"/>
+                    </LinearLayout>
+
+
+
+                    </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/reports_card"
+                    android:id="@+id/uppast_card"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_rowWeight="1"
@@ -78,6 +102,12 @@
                     app:cardBackgroundColor="#ffff"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#fff">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -95,89 +125,78 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="12dp"
-                            android:text="@string/reports"
+                            android:text="Past Appointments"
                             android:textColor="#000"
                             android:textSize="20sp" />
 
                     </LinearLayout>
-                </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/medication_card"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="12dp"
-                    app:cardBackgroundColor="#ffff"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="10dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="160dp"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="16dp">
-
-                        <ImageView
-                            android:layout_width="90dp"
-                            android:layout_height="90dp"
-                            android:contentDescription="@string/scheduling_btn"
-                            android:src="@drawable/medical_services_24px" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:id="@+id/pastexpandableLayout"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="12dp"
-                            android:text="@string/medication"
-                            android:textColor="#000"
-                            android:textSize="20sp" />
+                            android:orientation="vertical"
+                            android:visibility="gone">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="You have no upcoming appointments"
+                                android:textSize="22sp"
+                                android:textColor="#000"/>
+                        </LinearLayout>
+
 
                     </LinearLayout>
 
+
                 </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/achivements_card"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="12dp"
-                    app:cardBackgroundColor="#ffff"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="10dp">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="160dp"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="16dp">
 
-                        <ImageView
-                            android:layout_width="90dp"
-                            android:layout_height="90dp"
-                            android:contentDescription="TODO"
-                            android:src="@drawable/emoji_events_24px" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:text="@string/achievements"
-                            android:textColor="#000"
-                            android:textSize="20sp" />
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
 
 
             </GridLayout>
 
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alignmentMode="alignMargins"
+                android:columnCount="1"
+                android:columnOrderPreserved="false"
+                android:rowCount="1">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/schedule_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="120dp"
+                        app:cardBackgroundColor="#ffff"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="Schedule Appointment"
+                                android:textColor="#000"
+                                android:textSize="20sp"
+                                android:gravity="center"/>
+
+                    </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+
 
         </LinearLayout>
+
+
+
     </ScrollView>
+
 
 </LinearLayout>

@@ -30,6 +30,8 @@
     <string name="username">Username</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="upcoming_appointments">Upcoming Appointments</string>
+    <string name="schedule_appointment">Schedule Appointment</string>
 
 
 </resources>
