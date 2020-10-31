@@ -31,7 +31,7 @@ class Register_activity : AppCompatActivity() {
 
         etaccess_call.setOnClickListener {
             val intent = Intent(Intent.ACTION_DIAL)
-            intent.data = Uri.parse("tel:123456789")
+            intent.data = Uri.parse("tel:6056666666")
             startActivity(intent)
         }
         Registed_user.setOnClickListener{
