@@ -1,5 +1,6 @@
 package com.example.hackapp1
 
+import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,6 +8,7 @@ import android.transition.AutoTransition
 import android.transition.TransitionManager
 import android.view.View
 import androidx.annotation.RequiresApi
+import kotlinx.android.synthetic.main.activity_main__dash_board.*
 import kotlinx.android.synthetic.main.activity_scheduling_main.*
 
 class scheduling_main : AppCompatActivity() {
@@ -33,6 +35,11 @@ class scheduling_main : AppCompatActivity() {
                 TransitionManager.beginDelayedTransition(uppast_card, AutoTransition())
                 pastexpandableLayout.visibility = View.GONE
             }
+        }
+
+        schedule_btn.setOnClickListener {
+            intent = Intent(this, scheduling_main_page::class.java);
+            startActivity(intent)
         }
 
 

@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hackapp1">
-        <activity android:name=".achivements_main"></activity>
+        <activity android:name=".scheduling_main_page"></activity>
+        <activity android:name=".achivements_main" />
         <activity android:name=".medication_main" />
         <activity android:name=".reports_main" />
         <activity android:name=".scheduling_main" />
